@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-lg-10">
-    <h1 class="page-header">Usuário</h1>
+    <h1 class="page-header">Usuários</h1>
   </div>
   <div class="col-lg-2 text-right align-header">
     <%= link_to 'Novo Usuário', new_user_path, class: "btn btn-primary" %>
@@ -23,7 +23,7 @@
           <tr>
             <td><%= user.name %></td>
             <td><%= user.email %></td>
-            <td class="text-right">
+            <td>
               <%= link_to 'Editar', edit_user_path(user), class: "btn btn-xs btn-primary" %>
               <%= link_to 'Deletar', user, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-xs btn-danger" %>
             </td>

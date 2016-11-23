@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	get "/dashboard", to: 'dashboards#index'
-
+  resources :rooms
   resources :users
+	get "/dashboard", to: 'dashboards#index'
 end

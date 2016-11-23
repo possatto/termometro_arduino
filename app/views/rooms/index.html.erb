@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-lg-10">
+    <h1 class="page-header">Salas</h1>
+  </div>
+  <div class="col-lg-2 text-right align-header">
+    <%= link_to 'Nova Sala', new_room_path, class: "btn btn-primary" %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Temperatura Máxima</th>
+            <th>Temperatura Miníma</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @rooms.each do |room| %>
+          <tr>
+            <td><%= room.name %></td>
+            <td><%= room.temperature_max %></td>
+            <td><%= room.temperature_minimum %></td>
+            <td>
+              <%= link_to 'Editar', edit_room_path(room), class: "btn btn-xs btn-primary" %>
+              <%= link_to 'Deletar', room, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-xs btn-danger" %>
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
