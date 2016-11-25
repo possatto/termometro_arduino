@@ -1,4 +1,6 @@
 class Api < ApplicationRecord
+  has_many :rooms
+
   validates :temp_max, presence: true
   validates :temp_mini, presence: true
   validates :temp, presence: true

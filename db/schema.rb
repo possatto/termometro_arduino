@@ -19,8 +19,10 @@ ActiveRecord::Schema.define(version: 20161125023702) do
     t.float    "temp_max"
     t.float    "temp_mini"
     t.float    "temp"
+    t.integer  "room_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["room_id"], name: "index_apis_on_room_id", using: :btree
   end
 
   create_table "klasses", force: :cascade do |t|

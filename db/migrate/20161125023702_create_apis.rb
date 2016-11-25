@@ -5,6 +5,8 @@ class CreateApis < ActiveRecord::Migration[5.0]
       t.float :temp_mini
       t.float :temp
 
+      t.belongs_to :room, index: true
+
       t.timestamps
     end
   end

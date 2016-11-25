@@ -7,6 +7,6 @@ class ApisController < ApplicationController
 
   private
   def api_params
-    params.permit(:temp_max, :temp_mini, :temp)
+    params.permit(:temp_max, :temp_mini, :temp, :room_id)
   end
 end

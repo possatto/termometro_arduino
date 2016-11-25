@@ -5,8 +5,7 @@
 
   <% @rooms.each do |room| %>
     <div class="col-lg-6">
-      <!-- <div class="panel panel-red"> -->
-      <div class="panel panel-green">
+      <div class="panel <%= room.temp_ok? ? 'panel-red' : 'panel-green' %>">
         <div class="panel-heading">
           <div class="row">
             <div class="col-xs-6">
@@ -15,8 +14,14 @@
             </div>
             <div class="col-xs-6 text-right">
               <p>Tempratura atual</p>
-              <div class="huge">24º</div>
-              <div>Acima do esperado!</div>
+              <div class="huge"><%= room.current_temp %>º</div>
+              <div>
+                <% if room.current_temp > room.temperature_max %>
+                  Acima do esperado!
+                <% elsif room.current_temp < room.temperature_minimum %>
+                  abaixo do esperado!
+                <% end %>
+              </div>
             </div>
           </div>
         </div>
