@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  temp_max: 1.5
+  temp_mini: 1.5
+  temp: 1.5
+
+two:
+  temp_max: 1.5
+  temp_mini: 1.5
+  temp: 1.5
