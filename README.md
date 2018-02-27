@@ -1,24 +1,5 @@
-# README
+# Projeto de Instiucional
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este projeto foi criado para uma matéria de Faculdade.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Consiste em receber a temperatura de um Arduino através da porta USB e exibir, através de uma interface, se a temperatura do ambiente esta de acordo com as temperaturas configuradas.
