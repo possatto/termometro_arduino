@@ -1,4 +1,4 @@
-# Projeto de Instiucional
+# Projeto Instiucional
 
 Este projeto foi criado para uma matéria de Faculdade.
 
